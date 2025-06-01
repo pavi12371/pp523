@@ -1,0 +1,74 @@
+def fibonacci(number):
+ if(number==0):
+    return 0
+ elif number==1:
+    return 1
+ else:
+    return fibonacci (number-2)+fibonacci(number-1)
+number=int(input("please  enter the fibonacci number range="))
+sum=0
+for num in range(number):
+ print(fibonacci(num),end='')
+ sum=sum+fibonacci(num)
+print("\n the sum of fibonacci series numbers=%d"%sum)
+
+output:please  enter the fibonacci number range=45
+0112358132134558914423337761098715972584418167651094617711286574636875025121393196418317811514229832040134626921783093524578570288792274651493035224157817
+
+def factorial(n):
+ if n==0:
+   return 0
+ if n==1:
+   return 1
+ else:
+   return n *factorial(n-1)
+n=int(input("enter any number:"))
+print("factorial value of",n,"is:",factorial(n))
+
+output:enter any number:45
+factorial value of 45 is: 119622220865480194561963161495657715064383733760000000000
+
+def pal(s):
+    s = s.lower()
+    if len(s) <= 1:
+        return True  
+    elif s[0] != s[-1]:
+        return False
+    else:
+        return pal(s[1:-1])
+myinput = input("Enter a string: ")
+if pal(myinput):
+    print(f"'{myinput}' is a palindrome.")
+else:
+    print(f"'{myinput}' is not a palindrome.")
+
+output:Enter a string: 45
+'45' is not a palindrome.
+
+def gcd(a,b):
+    if b==0:
+        return a
+    else:
+        return gcd(b,a%b)
+x=input("enter the first integer.")
+y=input("enter the seconf integer.")
+if x.isdigit()and y.isdigit():
+        a=int(x)
+        b=int(y)
+        result=gcd(a,b)
+        print(f"the gcd of{a}and{b}is:",result)
+else:
+        print("please nter valid integer.")
+
+output:enter the first integer:13
+enter the seconf integer:45
+the gcd o f13 and 45is: 1
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,78 @@
+import random
+random_number=random.randint(1,10)
+print("random number:",random_number)
+
+output:random number: 8
+
+import datetime
+current_datetime=datetime.datetime.now()
+print("current date and time:",current_datetime)
+
+output:current date and time: 2025-05-31 16:14:25.289216
+
+import math
+number=256
+sqrt=math.sqrt(number)
+print("squre root:",sqrt)
+
+ output:squre root: 16.0
+
+import math
+factorial=math.factorial(8)
+print("factorial:",factorial)
+
+output:factorial: 40320
+
+file_path="example.txt"
+with open(file_path,"w")as file:
+    file.write("hello,world!")
+with open(file_path,"r")as file:
+    content=file.read()
+    print("file content:",content)
+
+ output:file content: hello,world!
+
+import string
+text="heelo,world!"
+uppercase_text=text.upper()
+print("uppercase text:",uppercase_text)
+
+output:uppercase text: HEELO,WORLD!
+
+
+import secrets
+random_number=secrets.randbelow(10)+1
+print("cryptographically secure random number:",random_number)
+
+output:cryptographically secure random number: 2
+
+import platform
+system_name=platform.system()
+node_name=platform.node()
+processor_name=platform.processor()
+print("system name:",system_name)
+print("node name:",node_name)
+print("processor name:",processor_name)
+
+system name: Windows
+node name: pavithra
+processor name: Intel64 Family 6 Model 154 Stepping 4, GenuineIntel
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
